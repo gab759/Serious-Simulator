@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: f5cf40de55324e54a96e06eb3b9996f5, type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_LightingSettings: {fileID: 4890085278179872738, guid: d92ca797ae57e694da93d28129a153df, type: 2}
 --- !u!196 &5
 NavMeshSettings:
@@ -2257,10 +2257,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
-      propertyPath: m_LightProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 0171467e0e54aaa479b7817091b06588, type: 2}
@@ -2501,7 +2497,6 @@ GameObject:
   m_Component:
   - component: {fileID: 383907756}
   - component: {fileID: 383907757}
-  - component: {fileID: 383907758}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -2589,29 +2584,6 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
---- !u!114 &383907758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 383907755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
 --- !u!1 &386248912
 GameObject:
   m_ObjectHideFlags: 0
@@ -4700,7 +4672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786398101}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -0.6942189, z: 0, w: 0.71976393}
   m_LocalPosition: {x: -1.1892234, y: 0.6539999, z: 0.042983152}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5169,10 +5141,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
       propertyPath: m_UseLightProbes
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
-      propertyPath: m_LightProbeUsage
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
@@ -6336,10 +6304,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
-      propertyPath: m_LightProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 0171467e0e54aaa479b7817091b06588, type: 2}
@@ -6790,61 +6754,6 @@ MonoBehaviour:
   Target: {fileID: 930444528}
   smooth: 0
   damping: 6
---- !u!1 &1289796532
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1289796534}
-  - component: {fileID: 1289796533}
-  m_Layer: 0
-  m_Name: GameObject (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1289796533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289796532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeabfdd8814865244b836f0322c9cfcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vehicle: {fileID: 786398102}
-  alturaObjetivo: 1.5
-  velocidadMotor: 1
-  valueMotor: 100
-  motorAmplitude: 1
-  maxRotation: 35
-  A: 0
-  B: 0
-  C: 0
-  longg: 0
-  SmoothEngine: 0
---- !u!4 &1289796534
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289796532}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.6142874, y: -16.158646, z: 12.057319}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1304141135
 GameObject:
   m_ObjectHideFlags: 0
@@ -7716,10 +7625,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
-      propertyPath: m_LightProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 0171467e0e54aaa479b7817091b06588, type: 2}
@@ -8314,37 +8219,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552430326}
   m_Mesh: {fileID: 4300098, guid: f55006f6a32a71b45a114b4680c1e575, type: 3}
---- !u!1 &1564067921
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1564067922}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1564067922
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1564067921}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.6142874, y: -16.158646, z: 12.057319}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1566651449
 GameObject:
   m_ObjectHideFlags: 0
@@ -9059,10 +8933,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
-      propertyPath: m_LightProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 0171467e0e54aaa479b7817091b06588, type: 2}
@@ -9612,10 +9482,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
       propertyPath: m_UseLightProbes
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
-      propertyPath: m_LightProbeUsage
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
@@ -10460,10 +10326,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
-      propertyPath: m_LightProbeUsage
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 059e7d511f5f4a1498f289d6f83f53d5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 0171467e0e54aaa479b7817091b06588, type: 2}
@@ -10918,5 +10780,3 @@ SceneRoots:
   - {fileID: 1790072213}
   - {fileID: 2097715040}
   - {fileID: 1335214918}
-  - {fileID: 1564067922}
-  - {fileID: 1289796534}
